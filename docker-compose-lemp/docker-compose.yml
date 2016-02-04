@@ -1,0 +1,21 @@
+app:
+ build: ./php
+ links:
+  - db
+ volumes:
+  - ./:/var/www/
+web:
+ image: nginx
+ ports:
+  - "80:80"
+ links:
+  - app
+ volumes:
+  - ./html/:/var/www/html/
+  - ./nginx/:/etc/nginx/conf.d/
+db:
+ image: mysql
+ environment:
+  - MYSQL_ROOT_PASSWORD=verysecret
+ volumes:
+  - ./mysql/data:/var/lib/mysql
