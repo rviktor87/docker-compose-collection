@@ -4,8 +4,14 @@ So I created one :)
 
 It's a good starting point for creating a distributed, load balanced, HA system.
 
-# Install
-
-
 # Requirements
+
+Install [Docker](https://www.docker.io/) and [Compose](http://docs.docker.com/compose/install/)
+
 I tried out with Docker 1.9.* >=
+
+# Usage
+
+`cd docker-compose-lemp`
+
+`docker-compose up -d`
