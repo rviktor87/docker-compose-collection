@@ -3,7 +3,7 @@ app:
  links:
   - db
  volumes:
-  - ./:/var/www/
+  - ./:/var/www/html/
 web:
  image: nginx
  ports:
@@ -11,7 +11,7 @@ web:
  links:
   - app
  volumes:
-  - ./html/:/var/www/html/
+  - ./public/:/var/www/html/public
   - ./nginx/:/etc/nginx/conf.d/
 db:
  image: mysql
