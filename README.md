@@ -8,7 +8,7 @@ Install [Docker](https://www.docker.io/) and [Compose](http://docs.docker.com/co
 
 I tried out with Docker 1.9.* >=
 
-# Usage
+# Uasge of docker compose LEMP stack
 
 `cd docker-compose-lemp`
 
